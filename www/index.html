@@ -1,0 +1,62 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <p id="P1">
+        <h2>Formulario de ejemplo</h2>
+        <form name="formulario" id="formalario" onsubmit="acciones_onsubmit();" action"#">
+            <br />
+            <label>Nombre: </label>
+            <input type="text" name="elemento" id="caja_texto" onchange="" />
+            <br />
+            <br />
+            <label>PAIS </label>
+            <select id="opciones" type="select-multiple">
+                <option value="A">Op1</option>
+                <option value="b">Op2</option>
+                <option>Op3</option>
+            </select>
+            <br />
+            <label>DESCRIPCION: </label>
+            <textarea id="descripcion" onfocus="focusFunction()" onblur="blurFunction()">
+
+   </textarea>
+            <br />
+            <br />
+            <label>Quieres regresar al campus? </label>
+            <input type="radio" value="si" name="pregunta" id="pregunta_si" /> SI
+            <input type="radio" value="no" name="pregunta" id="pregunta_no" /> NO
+            <input type="radio" value="nsnc" name="pregunta" id="pregunta_nsnc" /> NS/NC
+            <br />
+            <br />
+            <input type="checkbox" value="condiciones" name="condiciones" id="condiciones" /> He leído y acepto las
+            condiciones
+            <br />
+            <input type="checkbox" value="privacidad" name="privacidad" id="privacidad" /> He leído la política de
+            privacidad
+            <br />
+            <br />
+            <input type="button" name="elemento" value="PRESIONAR" class="button"
+                onclick="this.disabled=true; this.value='Enviando...'; acciones_onsubmit();" />
+            <br />
+            <br />
+            <input type="submit" name="elemento" value="PRESIONAR submit" class="button-b" />
+        </form>
+        </p>
+    </div>
+    </div>
+</body>
+
+</html>
